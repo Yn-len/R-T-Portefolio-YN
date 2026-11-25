@@ -1,254 +1,160 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YAINSSA Nissam Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="site.css">
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="project.css">
-    <link rel="stylesheet" href="skills.css">
-    <link rel="stylesheet" href="contact.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b0f">
+  <meta name="description" content="Portfolio de Nissam Yainssa, étudiant en BUT Réseaux et Télécommunications, intéressé par les réseaux, les systèmes et la cybersécurité.">
+  <title>Nissam Yainssa — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    
-    <!--INTRO-->
-    <div id="intro">
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#accueil" aria-label="Retour à l'accueil">N<span>.</span>Y</a>
+    <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navigation">
+      <span></span><span></span>
+    </button>
+    <nav class="navigation" id="navigation" aria-label="Navigation principale">
+      <a class="nav-link active" href="#accueil">Accueil</a>
+      <a class="nav-link" href="#apropos">À propos</a>
+      <a class="nav-link" href="#parcours">Parcours</a>
+      <a class="nav-link" href="#competences">Compétences</a>
+      <a class="nav-contact" href="#contact">Me contacter <span>↗</span></a>
+    </nav>
+  </header>
 
-        <div class="intro-text">
-            <span class="line" data-text="YAINSSA NISSAM">YAINSSA NISSAM</span>
-            <span class="subtitle">1er année</span>
+  <main>
+    <section class="hero section" id="accueil">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> PORTFOLIO PERSONNEL <span class="eyebrow-line"></span> 2026</p>
+        <p class="hero-kicker">Étudiant en réseaux & télécommunications</p>
+        <h1>NISSAM<br><span>YAINSSA</span></h1>
+        <div class="hero-bottom">
+          <p class="hero-description">Je construis mes bases en informatique, réseaux et systèmes avec un objectif : évoluer vers la cybersécurité.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#apropos">Découvrir mon profil <span>↘</span></a>
+            <a class="button button-quiet" href="CV_YAINSSA_Nissam.pdf" target="_blank" rel="noopener">Voir mon CV <span>↗</span></a>
+          </div>
         </div>
+      </div>
 
-        <div class="loading-bar">
-            <div class="loading-progress"></div>
+      <div class="hero-art reveal" aria-label="Composition graphique abstraite en trois dimensions">
+        <div class="art-top"><span>YN / 001</span><span>NETWORKS · SYSTEMS · SECURITY</span></div>
+        <div class="orb-scene">
+          <div class="orb-shadow"></div>
+          <div class="orb">
+            <div class="orb-shine"></div>
+            <div class="orb-ring"></div>
+          </div>
+          <div class="orbit orbit-a"></div>
+          <div class="orbit orbit-b"></div>
+          <span class="orb-point point-a"></span>
+          <span class="orb-point point-b"></span>
+          <span class="cross cross-a">+</span>
+          <span class="cross cross-b">+</span>
         </div>
-    </div>
-
-    <header>
-        <span class="logo">YN</span>
-
-        <div class="burger-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
-        <nav>
-           <ul> <li>
-                <button class="active">Accueil</button>
-                <button>À propos</button>
-                <button>Projets</button>
-                <button>Compétences</button>
-                <button>Contact</button>
-            </ul> </li>
-        </nav>
-    </header>
-    
-    <!--SITE-->
-    <section>
-
-        <div id="site">
-            <div id="left">
-                <h2>Bienvenue, Mon nom est</h2>
-                <div>
-                    <h1>NISSAM YAINSSA</h1>
-                    <span class="intro-label">Je suis</span>
-                    <span class="job-title">etudiant en R&T</span>
-                </div>
-
-                <p class="description">Mon objectif est de travailler dans le domaine de la cybersécurité.</p>
-                <div class="cta-buttons">
-                    <a href="CV_YAINSSA_Nissam.pdf" download="CV_YAINSSA_Nissam.pdf" class="btn-primary">Télécharger mon CV</a>
-                    <button class="btn-contact">Contact</button>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-    
-    <!--ABOUT-->
-    <section>
-        
-        <div id="about-section">
-            <div id="description-about">
-                <span class="about">À propos de</span><span class="me">Moi</span>
-            </div>
-            
-            <div id="about-content">
-                <div id="about-left">
-                    <h3>Qui je suis</h3>
-                    <p>J'ai developpé une passion envers l’informatique durant mes 2 dernieres années du lycée. Aujourd’hui, je me réorienter vers ce qui m’intéresse vraiment et creuser dans ce qui me plait rééllement. Ce que j’ai appris en art la créativité, le sens du détail me sert aussi beaucoup dans ce domaine. Ce portfolio montre un peu qui je suis et ce que j’aime faire.</p>
-                    <p>Curieux et autonome, j'aime apprendre de nouvelles technologies, expérimenter, puis améliorer mon travail pour le rendre plus cohérent, efficace et surtout utile.</p>
-                </div>
-                <div id="about-right">
-                    <img src="portefolio.jpg"  class="about-image">
-                </div>
-            </div>
-        </div>
-    </section>
-    
-     <!--PROJECTS-->
-    <section>
-
-        <div id="projects-section">
-            <div id="description-projects">
-                <span class="projects">Mes</span><span class="work">Projets</span>
-            </div>
-            
-            <!-- Web Development Projects -->
- 
-
-            <!-- Low-Level Projects -->
-                <div class="project-category-section">
-                <h3 class="category-title">Projets Bas Niveau</h3>
-                <div class="projects-grid">
-                    <div class="project-card" data-project="3">
-                        <div class="project-image">
-                            <img src="NPL.png" alt="Project 3">
-                        </div>
-                        <div class="project-content">
-                            <h3>Langage de Programmation (en cours (67% terminé))</h3>
-                            <p class="project-tech">C</p>
-                            <button class="btn-view-project" data-project="3">Voir Détails</button>
-                        </div>
-                    </div>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
+        <div class="art-bottom"><span>FIG. 01 — DIGITAL CORE</span><span>43°20' N / 3°13' E</span></div>
+      </div>
+      <a class="scroll-cue" href="#apropos"><span></span> FAIRE DÉFILER</a>
     </section>
 
-    <!-- POPUP -->
-    <div id="project-popup" class="popup-overlay">
-
-        <div class="popup-content">
-            <button class="popup-close">&times;</button>
-            <div class="popup-body">
-                <h2 id="popup-title"></h2>
-                <div class="popup-image">
-                    <img id="popup-img" src="" alt="Project">
-                </div>
-
-                <p id="popup-description"></p>
-
-                <div class="popup-tech">
-                    <h4>Technologies :</h4>
-                    <p id="popup-tech-list"></p>
-                </div>
-
-                <div class="popup-links">
-                    <a href="#" class="btn-popup-link">Démo Live</a>
-                    <a href="#" class="btn-popup-link secondary">GitHub</a>
-                </div>
-
-            </div>
+    <section class="section about-section" id="apropos">
+      <div class="section-head reveal">
+        <p class="section-index">01 / À PROPOS</p>
+        <h2>Comprendre.<br><span>Construire.</span> Progresser.</h2>
+      </div>
+      <div class="about-layout">
+        <div class="portrait-frame reveal">
+          <img src="portefolio.jpg" alt="Portrait de Nissam Yainssa" onerror="this.style.display='none';this.nextElementSibling.hidden=false">
+          <div class="portrait-fallback" hidden>YN<span>_</span></div>
+          <div class="portrait-caption"><span>NISSAM YAINSSA</span><span>ÉTUDIANT · IUT BÉZIERS</span></div>
         </div>
-
-    </div>
-
-    <!--SKILLS-->
-    <section>
-
-        <div id="skills-section">
-            <div id="description-skills">
-                <span class="my">Mes</span><span class="skills">Compétences</span>
-            </div>
-        
-        <div class="skills-grid">
-            <!-- C -->
-            <div class="skill-card">
-                <div class="skill-content">
-                    <h3>C</h3>
-                    <p>En cours d'aprentissage en amont. 
-                       Estimatin de maitrise 17%</p>
-                </div>
-            </div>
-
-            <!-- HTML -->
-            <div class="skill-card">
-                <div class="skill-content">
-                    <h3>HTML</h3>
-                    <p>Estimation de maitrise 85%.</p>
-                </div>
-            </div>
-
-            <!-- CSS -->
-            <div class="skill-card">
-                <div class="skill-content">
-                    <h3>CSS</h3>
-                    <p>35%</p>
-                </div>
-            </div>
-
-            <!-- JavaScript -->
-            <div class="skill-card">
-                <div class="skill-content">
-                    <h3>JavaScript</h3>
-                    <p>En cours d'apprentissage</p>
-                </div>
-            </div>
-
-            <!-- SQL -->
-            <div class="skill-card">
-                <div class="skill-content">
-                    <h3>SQL</h3>
-                    <p> En cours d'apprentissage</p>
-                </div>
-            </div>
-
-            <!-- Spline -->
-            <div class="skill-card">
-                <div class="skill-content">
-                    <h3>Spline</h3>
-                    <p>Design 3D</p>
-                </div>
-            </div>
+        <div class="about-copy reveal">
+          <p class="lead">Je suis étudiant en première année de BUT Réseaux et Télécommunications à l'IUT de Béziers.</p>
+          <p>Après un parcours au lycée en STD2A, j'ai choisi de me réorienter vers l'informatique. Cette transition m'a permis de découvrir un domaine dans lequel j'ai envie d'apprendre, de pratiquer et de progresser continuellement.</p>
+          <p>Je m'intéresse particulièrement aux réseaux, à Linux, aux systèmes et à la programmation. À terme, j'aimerais poursuivre vers la cybersécurité, en construisant d'abord des bases techniques solides.</p>
+          <div class="about-facts">
+            <div><span class="fact-number">01</span><span class="fact-label">Apprendre par la pratique</span></div>
+            <div><span class="fact-number">02</span><span class="fact-label">Comprendre avant d'automatiser</span></div>
+            <div><span class="fact-number">03</span><span class="fact-label">Progresser étape par étape</span></div>
+          </div>
         </div>
-    </div>
-
-</section>
-
-    <!--CONTACT-->
-    <section>
-        <div id="contact-section">
-
-            <div id="description-contact">
-                <span class="get">Me</span><span class="in-touch">Contacter</span>
-            </div>
-
-            <div class="contact-container">
-                <div class="contact-card">
-
-                    <div class="contact-info">
-                        <h3>Email</h3>
-                        <p><a href="mailto:nissamyn@gmail.com">nissam.yainssa17@gmail.com</a></p>
-                    </div>
-
-                </div>
-
-
-                <div class="contact-card">
-
-                    <div class="contact-info">
-                        <h3>Git Hub</h3>
-                        <p><a href="https://github.com/Yn-len" target="_blank">https://github.com/Yn-len</a></p>
-                    </div>
-
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
-    
-    <script src="script.js"></script>
+
+    <section class="section path-section" id="parcours">
+      <div class="section-head reveal">
+        <p class="section-index">02 / PARCOURS</p>
+        <h2>Un parcours en <span>construction.</span></h2>
+        <p class="section-intro">Les étapes qui m'amènent progressivement vers les métiers des réseaux et de la cybersécurité.</p>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="timeline-meta"><span>2026 — AUJOURD'HUI</span><span class="timeline-dot"></span></div>
+          <div class="timeline-content">
+            <p class="timeline-type">FORMATION ACTUELLE</p>
+            <h3>BUT Réseaux & Télécommunications</h3>
+            <p>IUT de Béziers</p>
+            <p class="timeline-description">Découverte des réseaux, des systèmes d'exploitation, de la programmation, de l'électronique et des bases techniques des télécommunications.</p>
+          </div>
+        </article>
+        <article class="timeline-item reveal">
+          <div class="timeline-meta"><span>EXPÉRIENCE</span><span class="timeline-dot"></span></div>
+          <div class="timeline-content">
+            <p class="timeline-type">STAGE DE DÉCOUVERTE</p>
+            <h3>Mayotte Élec</h3>
+            <p>Découverte du travail sur installations électriques</p>
+            <p class="timeline-description">Première expérience du monde professionnel : installation de prises, passage de câbles et découverte des raccordements électriques.</p>
+          </div>
+        </article>
+        <article class="timeline-item reveal">
+          <div class="timeline-meta"><span>AVANT 2026</span><span class="timeline-dot"></span></div>
+          <div class="timeline-content">
+            <p class="timeline-type">FORMATION PRÉCÉDENTE</p>
+            <h3>Baccalauréat STD2A</h3>
+            <p>Lycée de Mamoudzou Nord · Mayotte</p>
+            <p class="timeline-description">Un parcours qui m'a apporté une sensibilité au design, au sens du détail et à la recherche de solutions visuelles.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="competences">
+      <div class="section-head reveal">
+        <p class="section-index">03 / COMPÉTENCES</p>
+        <h2>Des bases que je <span>renforce.</span></h2>
+        <p class="section-intro">Je préfère présenter honnêtement ce que je connais et ce que je suis encore en train d'apprendre.</p>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card reveal"><span class="skill-no">01</span><div class="skill-icon">&lt;/&gt;</div><h3>Développement web</h3><p>HTML, CSS et premières notions de JavaScript.</p><span class="skill-tag">EN APPRENTISSAGE</span></article>
+        <article class="skill-card reveal"><span class="skill-no">02</span><div class="skill-icon">Py</div><h3>Programmation</h3><p>Python et logique de programmation. Approfondissement progressif.</p><span class="skill-tag">EN APPRENTISSAGE</span></article>
+        <article class="skill-card reveal"><span class="skill-no">03</span><div class="skill-icon">⌘</div><h3>Systèmes</h3><p>Découverte de Linux, du terminal et des commandes essentielles.</p><span class="skill-tag">EN FORMATION</span></article>
+        <article class="skill-card reveal"><span class="skill-no">04</span><div class="skill-icon">↗</div><h3>Réseaux</h3><p>Adressage, protocoles et fonctionnement des infrastructures réseau.</p><span class="skill-tag">EN FORMATION</span></article>
+        <article class="skill-card reveal"><span class="skill-no">05</span><div class="skill-icon">▦</div><h3>Environnement technique</h3><p>VS Code, configuration et découverte des composants PC.</p><span class="skill-tag">PRATIQUE PERSONNELLE</span></article>
+        <article class="skill-card skill-card-focus reveal"><span class="skill-no">06</span><div class="skill-icon">◈</div><h3>Cybersécurité</h3><p>Un domaine que je souhaite approfondir après avoir consolidé mes bases en réseaux et systèmes.</p><span class="skill-tag">OBJECTIF</span></article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-panel reveal">
+        <div>
+          <p class="section-index">04 / CONTACT</p>
+          <h2>On échange<br><span>quand tu veux.</span></h2>
+          <p class="contact-text">Pour discuter d'informatique, de formation ou d'une opportunité, tu peux me contacter ici.</p>
+        </div>
+        <div class="contact-links">
+          <a class="contact-link" href="mailto:nissam.yainssa17@gmail.com"><span>EMAIL</span><strong>nissam.yainssa17@gmail.com</strong><b>↗</b></a>
+          <a class="contact-link" href="https://github.com/Yn-len" target="_blank" rel="noopener"><span>GITHUB</span><strong>github.com/Yn-len</strong><b>↗</b></a>
+          <a class="contact-cv" href="CV_YAINSSA_Nissam.pdf" target="_blank" rel="noopener">Consulter mon CV <span>↗</span></a>
+        </div>
+      </div>
+      <footer class="footer"><a class="brand" href="#accueil">N<span>.</span>Y</a><span>© 2026 NISSAM YAINSSA</span><a href="#accueil">RETOUR EN HAUT ↑</a></footer>
+    </section>
+  </main>
 </body>
 </html>
